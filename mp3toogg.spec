@@ -1,5 +1,5 @@
-Summary:	Utility for MP3 information and tag modification
-Summary(pl):	Narzêdzie do modyfikowania informacji i znaczników MP3
+Summary:	Tool for MP3 to Ogg/Vorbis reencoding
+Summary(pl):	Narzêdzie do przekodowania MP3 do Ogg/Vorbis
 Name:		mp3toogg
 Version:	2.0
 Release:	0.1
@@ -16,13 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-mp3info is a command line utility to extract and manipulate TAG (ID3)
-info from MP3 files. It also has a VERY configurable output.
+This tool allow you to convert MP3 files into the free Ogg format.
 
 %description -l pl
-mp3info to dzia³aj±ce z linii poleceñ narzêdzie do wyci±gania i
-modyfikowania informacji TAG (znaczników ID3) z plików MP3. Ma bardzo
-konfigurowalne wyj¶cie.
+To narzêdzie pozwala na konwersje plików MP3 na wolnodostêpny format Ogg.
 
 %prep
 %setup -q
@@ -43,10 +40,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README ChangeLog
 %attr(755,root,root) %{_bindir}/*
