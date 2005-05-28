@@ -2,7 +2,7 @@ Summary:	Tool for MP3 to Ogg/Vorbis reencoding
 Summary(pl):	Narzêdzie do przekodowania MP3 do Ogg/Vorbis
 Name:		mp3toogg
 Version:	2.0
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/mp3toogg/%{name}-%{version}.tar.gz
