@@ -1,5 +1,5 @@
 Summary:	Tool for MP3 to Ogg/Vorbis reencoding
-Summary(pl):	Narzêdzie do przekodowania MP3 do Ogg/Vorbis
+Summary(pl.UTF-8):   NarzÄ™dzie do przekodowania MP3 do Ogg/Vorbis
 Name:		mp3toogg
 Version:	2.0
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This tool allow you to convert MP3 files into the free Ogg format.
 
-%description -l pl
-To narzêdzie pozwala na konwersje plików MP3 na wolnodostêpny format Ogg.
+%description -l pl.UTF-8
+To narzÄ™dzie pozwala na konwersje plikÃ³w MP3 na wolnodostÄ™pny format Ogg.
 
 %prep
 %setup -q
